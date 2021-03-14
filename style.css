@@ -1,6 +1,10 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -9,22 +13,55 @@ body {
 .hero-image { 
     max-height: 500px;
     width: auto;
+    display: block;
+    margin: 4em auto;
+    
+    width: 90%;
+    border-radius: 50%;
 }
 
-.card {
+.card,
+.gallery-card {
     height: 300px;
     width: auto;
+    margin: 4rem 5rem;
+    display: block;
+    justify-content: center;
+    box-shadow: 0 5px 8px 0;
+    
 }
+
+#sophie-card {
+    margin-left: 6.5em;
+}
+
+#sophie-tongue-out {
+    margin-left: .6em;
+    width: 95%;
+}
+
+#jaxson-taekwondo {
+    margin-left: 7em;
+}
+
+#brother-love {
+    margin-left: 4em;
+}
+
+#baby-sophie {
+    margin-left: 4.5em;
+}
+
+
 
 /* Typography */
 
 h1 {
-    font-size: 10em;
-}
-
-.jaxson,
-.sophie ::first-letter {
-    font-size: 52;
+    font-size: 3.4rem;
+    display: block;
+    margin: 3rem 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .jaxson {
@@ -41,31 +78,95 @@ h1 {
     color: #f0f600;
 }
 
-.opening-paragraph {
+.subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    color: #1c5d99;
+    font-size: 1.1em;
+}
+
+.subtitle-1,
+.subtitle-2,
+.subtitle-3 {
+    margin: 1em 0;
+    color: #1c5d99;
+    text-align: center;
     
 }
 
+.gallery-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    color: #1c5d99;
+    font-size: 1.1em;
+    margin: 1em .5em;
+    text-align: center;
+    line-height: 2.5rem;
+    padding-top: 1em;
+}
+
+.paragraph-about-jaxson {
+    color: #1c5d99;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+}
+
+.paragraph-about-sophie {
+    color: #542e71;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+}
+
 /* Layout */
+
+footer {
+    background-color: #542e71;
+    padding: 4em;
+    text-align: center;
+    color: #f0f600;
+}
+
 
 /* Navigation */
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 0;
     background-color: #feffc2;
-    /* opacity: 50%; */
-    
+    font-size: 1.2em;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 nav a {
-    /* text-decoration: none; */
-    color: #1c5d99;
-    /* opacity: 50%; */
-    /* font-weight: 700;
-    padding: .25em 0; */
-    /* font-weight: bold; */
+    text-decoration: none;
+    color: #133f67;
+    /* font-weight: 700; */
+    padding: .5em 0;
+    display: flex;
+    justify-content: center;
+    
 }
+
+/* .current-page {
+    border-bottom: 1px solid #1c5d99;
+}
+
+.current-page:hover {
+    color: #1c5d99;
+} */
+
 
 /* Media Queries */
