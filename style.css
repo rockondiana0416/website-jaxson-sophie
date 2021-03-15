@@ -8,14 +8,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Images */
+/******** Images ********/
 
 .hero-image { 
     max-height: 500px;
     width: auto;
     display: block;
     margin: 4em auto;
-    
     width: 90%;
     border-radius: 50%;
 }
@@ -28,16 +27,15 @@ body {
     display: block;
     justify-content: center;
     box-shadow: 0 5px 8px 0;
-    
 }
 
-#sophie-card {
+#sophie-curlers {
     margin-left: 6.5em;
 }
 
 #sophie-tongue-out {
-    margin-left: .6em;
-    width: 95%;
+    margin-left: 1em;
+    width: 90%;
 }
 
 #jaxson-taekwondo {
@@ -63,8 +61,7 @@ body {
     margin-left: 1.5em;
 }
 
-
-/* Typography */
+/******** Typography *******/
 
 h1 {
     font-size: 3.4rem;
@@ -88,6 +85,8 @@ h1 {
     color: #f0f600;
 }
 
+/******** Layout ********/
+
 .subtitle {
     margin-left: auto;
     margin-right: auto;
@@ -100,9 +99,7 @@ h1 {
 .subtitle-2,
 .subtitle-3 {
     margin: 1em 0;
-    color: #1c5d99;
     text-align: center;
-    
 }
 
 .gallery-subtitle {
@@ -137,22 +134,34 @@ h1 {
     line-height: 2.5rem;
 }
 
-/* Layout */
+.aunt-learning p {
+    color: #1c5d99; 
+    width: 95%;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+p {
+    padding: 1rem;
+}
+
+.quote {
+    background-color: #feffc2;
+}
 
 footer {
     background-color: #542e71;
-    padding: 4em;
+    padding: 2em;
     text-align: center;
     color: #f0f600;
 }
 
 
-/* Navigation */
+/******** Navigation ********/
 
 nav ul {
     list-style: none;
     display: flex;
-    /* justify-content: center; */
     padding: 0;
     background-color: #feffc2;
     font-size: 1.2em;
@@ -163,20 +172,115 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #133f67;
-    /* font-weight: 700; */
     padding: .5em 0;
     display: flex;
     justify-content: center;
     
 }
 
-/* .current-page {
-    border-bottom: 1px solid #1c5d99;
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
 }
 
-.current-page:hover {
-    color: #1c5d99;
-} */
+/******** Media Queries ********/
 
-
-/* Media Queries */
+@media (min-width: 675px) {
+    .hero-image { 
+        width: 50%;
+    }
+    h1 {
+        font-size: 12rem;
+    }
+    nav ul {
+        flex-direction: row;
+        padding: 1em 25em;
+    }
+    .subtitle {
+        /* margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        color: #1c5d99; */
+        font-size: 2em;
+        padding: 2rem;
+    }
+    .subtitle-1,
+    .subtitle-2,
+    .subtitle-3 {
+        margin: -1em 0;
+    }
+    .paragraph-about-jaxson {
+        width: 50%;
+        font-size: 2em;
+        padding-top: 10rem;
+    }
+    .paragraph-about-sophie {
+        width: 50%;
+        font-size: 2em;
+        padding-top: 10rem;
+    }
+    .images-of-jaxson-container {
+        background-color: #a9cdef;
+        display: flex;
+        justify-content: space-around;
+    }
+    .images-of-sophie-container {
+        background-color: #cfb7e1;
+        display: flex;
+        justify-content: space-around;
+    }
+    .gallery-subtitle {
+        width: 60%;
+        font-size: 2em;
+        padding-top: 5em;
+        margin-left: 10em;
+    }
+    .gallery-card {
+        display: inline;
+        margin: 5rem;
+    }
+    #brother-love, 
+    #jaxson-water-fountain,
+    #i-got-you {
+        margin-left: 12em;
+    } 
+     #sophie-tongue-out {
+        margin-left: 3em;
+        width: 25%;
+    }
+    #jaxson-taekwondo {
+        margin-left: 14em;
+    }
+    #swim-time {
+        margin-left: 8em;
+    }
+    #lego-time,
+    #princess-sophie {
+        margin-left: 6.5em;
+    }
+    .header-image {
+        height: 400px;
+        width: auto;
+        display: block;
+        margin-left: 27em;
+        margin-bottom: 5em;
+    }
+    
+    .jaxson-sophie-diana {
+        height: 400px;
+        width: auto;
+        margin-left: 28em;
+        margin-bottom: 5em;
+    }
+    p {
+        margin-left: 7em;
+        
+    }
+    .aunt-learning {
+        width: 90%;
+    }
+    .block-quote,
+    cite p {
+    background-color: #feffc2;
+}
+}
