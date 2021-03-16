@@ -186,34 +186,10 @@ nav a:focus {
 /******** Media Queries ********/
 
 @media (min-width: 675px) {
+
+    /* Images */
     .hero-image { 
         width: 50%;
-    }
-    h1 {
-        font-size: 12rem;
-    }
-    nav ul {
-        flex-direction: row;
-        padding: 1em 25em;
-    }
-    .subtitle {
-        font-size: 2em;
-        padding: 2rem;
-    }
-    .subtitle-1,
-    .subtitle-2,
-    .subtitle-3 {
-        margin: -1em 0;
-    }
-    .paragraph-about-jaxson {
-        width: 50%;
-        font-size: 2em;
-        padding-top: 10rem;
-    }
-    .paragraph-about-sophie {
-        width: 50%;
-        font-size: 2em;
-        padding-top: 10rem;
     }
     .images-of-jaxson-container {
         background-color: #a9cdef;
@@ -224,12 +200,6 @@ nav a:focus {
         background-color: #cfb7e1;
         display: flex;
         justify-content: space-around;
-    }
-    .gallery-subtitle {
-        width: 60%;
-        font-size: 2em;
-        padding-top: 5em;
-        margin-left: 10em;
     }
     .gallery-card {
         display: inline;
@@ -267,9 +237,44 @@ nav a:focus {
         margin-left: 28em;
         margin-bottom: 5em;
     }
+
+    /* Typography */
+    h1 {
+        font-size: 12rem;
+    }
+    nav ul {
+        flex-direction: row;
+        padding: 1em 25em;
+    }
+    .subtitle {
+        font-size: 2em;
+        padding: 2rem;
+    }
+    .subtitle-1,
+    .subtitle-2,
+    .subtitle-3 {
+        margin: -1em 0;
+    }
+    .gallery-subtitle {
+        width: 60%;
+        font-size: 2em;
+        padding-top: 5em;
+        margin-left: 10em;
+    }
+    
     p {
         margin-left: 7em;
-        
+    }
+    /* Layout */
+    .paragraph-about-jaxson {
+        width: 50%;
+        font-size: 2em;
+        padding-top: 10rem;
+    }
+    .paragraph-about-sophie {
+        width: 50%;
+        font-size: 2em;
+        padding-top: 10rem;
     }
     .aunt-learning {
         width: 90%;
