@@ -197,10 +197,6 @@ nav a:focus {
         padding: 1em 25em;
     }
     .subtitle {
-        /* margin-left: auto;
-        margin-right: auto;
-        width: 95%;
-        color: #1c5d99; */
         font-size: 2em;
         padding: 2rem;
     }
@@ -265,7 +261,6 @@ nav a:focus {
         margin-left: 27em;
         margin-bottom: 5em;
     }
-    
     .jaxson-sophie-diana {
         height: 400px;
         width: auto;
